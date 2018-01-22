@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>File Metadata Microservice</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+		<style>input#uploadButton { padding-bottom: 5px; }</style>
+	</head>
+	<body>
+        <form action='/upload' method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="uploadButton">Submit A File To View Its Filesize</label>
+            <input type="file" class="form-control-file" name="uploadfile" id="uploadButton">
+            <input type="submit" class="btn btn-danger">
+          </div>
+        </form>
+	</body>
+</html>
